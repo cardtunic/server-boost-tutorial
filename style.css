@@ -13,14 +13,42 @@ body {
     font: 400 1.5rem "Poppins", sans-serif;
     color: #d3d5db;
     padding: 4.5rem;
+    margin: 0;
     scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+@media(max-width: 1080px) {
+    * {
+        font-size: 93.75%;
+    }
+}
+
+@media(max-width: 720px) {
+    * {
+        font-size: 92%;
+    }
+
+    body {
+        padding: 1.5rem;
+    }
+}
+
+@media(max-width: 480px) {
+    * {
+        font-size: 90%;
+    }
+
+    body {
+        padding: 0.5rem;
+    }
 }
 
 ::-webkit-scrollbar {
     width: 12px;
     height: 12px;
     margin-right: 10px;
-   }
+}
 
 ::-webkit-scrollbar-button {
     width: 30px;
@@ -47,8 +75,8 @@ a:hover {
     transition: color 100ms ease-in;
 }
 
-li > video {
-    height: 39rem;
+ul {
+    list-style-type: none;
 }
 
 strong {
@@ -63,9 +91,7 @@ strong.strong_item {
 
 strong.strong_item_2 {
     color: #d3d5db;
-    font-weight: 600;
-    font-size: 1.2rem;
-    font-style: italic;
+    font: italic 600 1.2rem;
 }
 
 @keyframes scale {
@@ -108,11 +134,61 @@ strong.strong_item_2 {
 }
 
 #logo-container img {
-    height: 150px;
-    margin-bottom: -20px;
+    max-height: 150px;
+    margin-bottom: 5px;
 }
 
 #logo-container h1 {
     font: italic 800 2.75rem "Poppins", sans-serif;
+    margin: 0;
     color: #fff;
+}
+
+li > iframe {
+    max-width: 95%;
+    max-height: 95%;
+    display: block;
+    margin: auto;
+}
+
+@media(max-width: 720px) {
+    #logo-container img {
+        max-height: 130px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+
+    #logo-container h1 {
+        font: italic 800 2.75rem "Poppins", sans-serif;
+        margin: 0;
+        color: #fff;
+    }
+
+    li > iframe {
+        max-width: 90%;
+        max-height: 90%;
+        display: block;
+        margin: auto;
+    }
+}
+
+@media(max-width: 480px) {
+    #logo-container img {
+        margin-top: 15px;
+        max-height: 85px;
+        margin-bottom: 2px;
+    }
+
+    #logo-container h1 {
+        font: italic 800 1.5rem "Poppins", sans-serif;
+        margin: 0;
+        color: #fff;
+    }
+
+    li > iframe {
+        max-width: 85%;
+        max-height: 85%;
+        display: block;
+        margin: auto;
+    }
 }
