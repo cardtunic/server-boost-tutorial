@@ -30,7 +30,7 @@ body {
     }
 
     body {
-        padding: 1.5rem;
+        padding: 2rem;
     }
 }
 
@@ -40,7 +40,7 @@ body {
     }
 
     body {
-        padding: 0.5rem;
+        padding: 1.5rem;
     }
 }
 
@@ -76,6 +76,7 @@ a:hover {
 }
 
 ul {
+    padding: 0;
     list-style-type: none;
 }
 
@@ -133,7 +134,7 @@ strong.strong_item_2 {
     animation: 1s ease-in-out 500ms 1 scale;
 }
 
-#logo-container img {
+#logo-container embed {
     max-height: 150px;
     margin-bottom: 5px;
 }
@@ -152,7 +153,7 @@ li > iframe {
 }
 
 @media(max-width: 720px) {
-    #logo-container img {
+    #logo-container embed {
         max-height: 130px;
         margin-bottom: 5px;
         margin-top: 10px;
@@ -170,10 +171,14 @@ li > iframe {
         display: block;
         margin: auto;
     }
+
+    strong.strong_item_2 {
+        font: italic 600 1rem 'Poppins', sans-serif
+    }
 }
 
 @media(max-width: 480px) {
-    #logo-container img {
+    #logo-container embed {
         margin-top: 15px;
         max-height: 85px;
         margin-bottom: 2px;
@@ -190,5 +195,9 @@ li > iframe {
         max-height: 85%;
         display: block;
         margin: auto;
+    }
+
+    strong.strong_item_2 {
+        font: italic 600 0.85rem 'Poppins', sans-serif
     }
 }
